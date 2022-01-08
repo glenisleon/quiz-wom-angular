@@ -1,0 +1,14 @@
+<table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Lista de Razas</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let breed of breeds'>
+        <td>{{breed}}</td>
+        <td><a [routerLink]="['/breed', breed]" class="btn btn-outline-dark">Fotos</a></td>
+      </tr>
+    </tbody>
+  </table>

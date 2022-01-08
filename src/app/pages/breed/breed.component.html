@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let image of images | slice:0:2">
+      <div class="card">
+        <img [src]="image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Raza: {{name}}</h5>
+          <p class="card-text">
+            <a [routerLink]="['/breeds']" class="btn btn-outline-dark">Razas</a>
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
